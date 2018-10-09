@@ -9,7 +9,7 @@ Installation
 
 Usage:
 Argument to decorator must define number and type of arguments ( defined in python by type(arg) or arg.__class__)
-
+```
 >>> a= 12
 >>> a.__class__
 <type 'int'>
@@ -34,11 +34,11 @@ Argument to decorator must define number and type of arguments ( defined in pyth
 >>> a= 'test'
 >>> a.__class__
 <type 'str'>
-
+```
 Thus arguments to decorator would be like list,tuple,dict,int,float and str.
 
 Example:
-
+```
 from overloading import overload
 
 @overload(int, int)
@@ -70,7 +70,7 @@ area(3)   # will print 9
 area(4,5) # will print 20
 area([1,2,3]) # will print [1, 4, 9]
 area([1,2,3],[4,5,6]) # will print [4, 10, 18]
-
+```
 Documentation
 
 The concept is explained in my blog at https://medium.com/@hitechpundir/function-overloading-in-python-94a8b10d1e08
