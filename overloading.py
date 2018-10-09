@@ -20,11 +20,3 @@ def overload(*types):
         mm.register(types, function)
         return mm
     return register
-@overload(int, int)
-def area(length, breadth):
-    calc = length * breadth
-    print calc
-@overload(int)
-def area(size):
-    calc =  size * size
-    print calc
